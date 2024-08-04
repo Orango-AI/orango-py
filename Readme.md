@@ -52,7 +52,7 @@ pip install orango
 from orango import Sandbox
 
 def run():
-    sandbox = Sandbox.create(api_key='your-api-key-here', template_id='your-template-id-here')
+    sandbox = Sandbox()
     sandbox.exec('x = 1')
 
     execution = sandbox.exec('x += 1; x')

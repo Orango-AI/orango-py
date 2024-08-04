@@ -11,7 +11,7 @@ load_dotenv()
 def sandbox():
     api_key = os.getenv('ORANGO_APIKEY')
     base_url = os.getenv('ORANGO_BASE_URL')
-    sandbox = Sandbox.create(api_key=api_key, base_url=base_url)
+    sandbox = Sandbox(api_key=api_key, base_url=base_url)
     yield sandbox
     sandbox.close()
 
