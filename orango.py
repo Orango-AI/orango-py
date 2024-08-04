@@ -20,10 +20,6 @@ class OrangoExecutionResult:
         self.stderr = stderr
         self.session_id = session_id
 
-
-
-
-
 class Sandbox:
     def __init__(self, type:str = 'python', base_url: str = None, api_key: str = None, template_id: str = None):
         self.base_url =  base_url or os.getenv('ORANGO_BASE_URL') or 'https://orango.ai/api/v1'
